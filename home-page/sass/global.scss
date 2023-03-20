@@ -1,0 +1,57 @@
+
+body {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    color: $secondary;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: cacl(19/15);
+    padding: 10.5px 20.5px;
+    background-color: $secondary;
+    color: $whiteColor;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &--primary {
+        padding: 22px 32.5px;
+        color: $whiteColor;
+        background-color: $primary;
+    }
+
+    &--outline {
+        color: $secondary;
+        border: 1px solid currentColor;
+        background-color: transparent;
+    }
+
+    &--rounded {
+        border-radius: 8px;
+    }
+
+    &--buyNow {
+        padding: 14.5px 74px;
+    }
+}
