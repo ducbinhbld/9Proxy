@@ -1,22 +1,22 @@
 .map {
 
-
-
     &__container {
 
         display: flex;
         flex-direction: column;
         align-items: center;
+
         a {
             margin-top: 40px;
 
             div {
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
                 gap: 0 12.5px;
 
                 span {
-                    line-height: cacl(19/15);
+                   line-height: 1;
                 }
             }
         }
@@ -35,14 +35,29 @@
     font-weight: 400;
     line-height: cacl(19/15);
     color: $grayColor;
+    margin-bottom: 40px;
+}
+
+&__block {
+    background-image: url("/9Proxy/home-page/assets/images/map-frame.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 &__list {
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 40px;
 }
 
-&__item {
+&
 
+&__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 &__image {
@@ -55,13 +70,24 @@
 }
 
 &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
 }
 
 &__country {
-
+    font-weight: 400;
+    line-height: cacl(19/15);
+    color: $secondary2;
 }
 
 &__number {
+    font-size: 17px;
+    line-height: cacl(21/17);
+    color: $secondary2;
+
 
 }
 
