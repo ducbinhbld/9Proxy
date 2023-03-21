@@ -1,0 +1,70 @@
+.map {
+
+
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            margin-top: 40px;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 0 12.5px;
+
+                span {
+                    line-height: cacl(19/15);
+                }
+            }
+        }
+    }
+
+&__heading {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+
+}
+
+&__desc {
+    font-weight: 400;
+    line-height: cacl(19/15);
+    color: $grayColor;
+}
+
+&__list {
+
+}
+
+&__item {
+
+}
+
+&__image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    img {
+        object-fit: contain;
+    }
+}
+
+&__content {
+}
+
+&__country {
+
+}
+
+&__number {
+
+}
+
+
+
+}

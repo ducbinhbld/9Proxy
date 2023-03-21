@@ -1,0 +1,95 @@
+.block-proxy {
+    background-color: $bgColor;
+    margin-top: 100px;
+
+    &__container {
+        padding: 100px 0;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    &__item + &__item {
+        margin-top: 100px;
+    }
+
+    &__image {
+    }
+
+    &__content {
+        a {
+            margin-top: 40px;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 0 12.5px;
+
+                span {
+                    line-height: cacl(19/15);
+                }
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 120%;
+        color: $whiteColor;
+        margin-bottom: 35px;
+    }
+
+    &__desc {
+        line-height: 147%;
+        letter-spacing: 2%;
+        color: $whiteColor;
+        opacity: 70%;
+        margin-top: 30px;
+        font-weight: 400;
+
+    }
+
+    &__desc--safe {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        h3 {
+            color: $primary2;
+            font-size: 18px;
+            line-height: 200%;
+            letter-spacing: 2%;
+        }
+
+        p {
+
+            font-weight: 400;
+            color: $whiteColor;
+            opacity: 70%;
+            letter-spacing: 2%;
+            line-height: 147%;
+        }
+    }
+
+    &__benefit-list {
+    }
+
+    &__benefit-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 29px;
+
+        span {
+            color: $whiteColor;
+            font-size: 18px;
+            line-height: 200%;
+            text-transform: capitalize;
+
+        }
+    }
+}
