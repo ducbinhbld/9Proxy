@@ -61,7 +61,23 @@
     &__image {
         margin-top: 76px;
         margin-bottom: 100px;
+
     }
+
+    @media (prefers-reduced-motion: no-preference) {
+        &__image {
+          animation: logo-rolate infinite 20s linear;
+        }
+      }
+
+    @keyframes logo-rolate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
 
     &__services {
         
