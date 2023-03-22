@@ -1,0 +1,43 @@
+.faq {
+    margin-top: 100px;
+    margin-bottom: 106px;
+
+    &__container {
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 50px;
+    }
+
+
+    &__list + &__list {
+        margin-top: 20px;
+    }
+
+    &__item {
+        padding: 24px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f7f7f8;
+        border-radius: 8px;
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}

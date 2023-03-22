@@ -15,9 +15,10 @@
     &__heading {
         font-size: 40px;
         font-weight: 600;
-        line-height: cacl(50/40);
+        line-height: 50px;
         text-align: center;
         margin-bottom: 40px;
+        text-transform: capitalize;
     }
 
     &__list {
@@ -46,18 +47,17 @@
 
     &__content {
         width: 280px;
-        height: 100px;
     }
 
     &__title {
         font-size: 18px;
-        line-height: cacl(22/18);
+        line-height: 32px;
         margin-bottom: 10px;
     }
 
     &__desc {
         font-weight: 400;
         color: $grayColor;
-        line-height: calc(32/15);
+        line-height: 22px;
     }
 }

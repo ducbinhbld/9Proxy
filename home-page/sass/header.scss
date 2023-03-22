@@ -44,6 +44,11 @@
         cursor: pointer;
     }
 
+    &__menu {
+        width: 100%;
+        max-width: 757px;
+    }
+
     &__menu-list {
         width: 100%;
         max-width: 757px;
@@ -55,7 +60,7 @@
     }
 
     &__menu-link {
-        font-weight: 600;
+        font-weight: 500;
         line-height: calc(19/15);
         color: $secondary;
         cursor: pointer;

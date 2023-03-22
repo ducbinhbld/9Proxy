@@ -6,8 +6,9 @@
         flex-direction: column;
         align-items: center;
 
+
         a {
-            margin-top: 40px;
+            margin-top: 30px;
 
             div {
                 display: flex;
@@ -35,13 +36,17 @@
     font-weight: 400;
     line-height: cacl(19/15);
     color: $grayColor;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
 }
 
 &__block {
-    background-image: url("/9Proxy/home-page/assets/images/map-frame.png");
+    width: 100%;
+    padding: 0 90px;
+    background-image: url("/assets/images/map-frame.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+
 }
 
 &__list {
@@ -49,10 +54,12 @@
     justify-content: space-around;
     align-items: center;
     gap: 150px;
-    margin-bottom: 40px;
+    
 }
 
-&
+&__list:first-child {
+    margin-bottom: 40px;
+}
 
 &__item {
     display: flex;
@@ -79,13 +86,13 @@
 
 &__country {
     font-weight: 400;
-    line-height: cacl(19/15);
+    line-height: 19px;
     color: $secondary2;
 }
 
 &__number {
     font-size: 17px;
-    line-height: cacl(21/17);
+    line-height: 21px;
     color: $secondary2;
 
 
