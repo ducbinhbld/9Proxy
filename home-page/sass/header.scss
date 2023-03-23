@@ -1,6 +1,22 @@
 .header {
-    
-    background: linear-gradient(180deg, rgba(219, 228, 254, 0.35) 0%, rgba(219, 228, 254, 0) 73.44%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(219, 228, 254, 0.35) 0%,
+        rgba(219, 228, 254, 0) 73.44%,
+        rgba(255, 255, 255, 0) 100%
+    );
+
+
+
+    &__wrapper {
+        width: 100%;
+        max-width: 2560px;
+        position: fixed;
+        top: 0;
+        // background-color: #fff;
+        z-index: 9999;
+
+    }
 
     &__top {
         display: flex;
@@ -33,7 +49,7 @@
         padding: 0 20px;
         box-shadow: 0px 0px 35px rgba(65, 124, 177, 0.1);
     }
-    
+
     &__logo {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -61,11 +77,10 @@
 
     &__menu-link {
         font-weight: 500;
-        line-height: calc(19/15);
+        line-height: calc(19 / 15);
         color: $secondary;
         cursor: pointer;
     }
-
 
     &__auth {
         display: flex;
@@ -76,8 +91,7 @@
 
     &__login {
         font-weight: 600;
-        line-height: calc(19/15);
+        line-height: calc(19 / 15);
         color: $secondary;
     }
-
 }
