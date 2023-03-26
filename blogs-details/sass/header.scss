@@ -1,0 +1,97 @@
+.header {
+    // background: linear-gradient(
+    //     180deg,
+    //     rgba(219, 228, 254, 0.35) 0%,
+    //     rgba(219, 228, 254, 0) 73.44%,
+    //     rgba(255, 255, 255, 0) 100%
+    // );
+
+
+
+    &__wrapper {
+        width: 100%;
+        max-width: 2560px;
+        // position: fixed;
+        top: 0;
+        // background-color: #fff;
+        z-index: 9999;
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 10px;
+    }
+
+    &__language {
+        color: #737588;
+        font-size: 14px;
+        line-height: cacl(18/14);
+        cursor: pointer;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $whiteColor;
+        height: 70px;
+        border-radius: 5px;
+        padding: 0 20px;
+        box-shadow: 0px 0px 35px rgba(65, 124, 177, 0.1);
+    }
+
+    &__logo {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: cacl(38/26);
+        color: $secondary;
+        cursor: pointer;
+    }
+
+    &__menu {
+        width: 100%;
+        max-width: 757px;
+    }
+
+    &__menu-list {
+        width: 100%;
+        max-width: 757px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 25px;
+        padding: 0 35px;
+    }
+
+    &__menu-link {
+        font-weight: 500;
+        line-height: calc(19 / 15);
+        color: $secondary;
+        cursor: pointer;
+    }
+
+    &__auth {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 30px;
+    }
+
+    &__login {
+        font-weight: 600;
+        line-height: calc(19 / 15);
+        color: $secondary;
+    }
+}
