@@ -1,0 +1,24 @@
+.blogs-direction {
+
+    margin-top: 97px;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+
+        a {
+            color: $secondary;
+        }
+
+        a:first-child {
+            opacity: 50%;
+        }
+
+    }
+
+}

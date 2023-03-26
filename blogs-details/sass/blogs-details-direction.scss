@@ -1,0 +1,32 @@
+.blogs-details-direction {
+
+    margin-top: 97px;
+    margin-bottom: 50px;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+
+        a {
+            color: $secondary;
+            opacity: 50%;
+        }
+
+        svg path {
+            fill: $secondary;
+            opacity: 50%;
+        }
+
+    }
+
+    svg[class="blogs-details-direction--active"] path,
+    a[class="blogs-details-direction--active"] {
+        opacity: 100%;
+    }
+
+}

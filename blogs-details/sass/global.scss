@@ -1,0 +1,115 @@
+body {
+    font-family: $font;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    color: $secondary;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrap__linear-gradient {
+    background: linear-gradient(
+        180deg,
+        rgba(219, 228, 254, 0.35) 0%,
+        rgba(219, 228, 254, 0) 73.44%,
+        rgba(255, 255, 255, 0) 100%
+    );
+
+    
+}
+
+.btn {
+    display: inline-block;
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: cacl(19/15);
+    padding: 10.5px 20.5px;
+    background-color: $secondary;
+    color: $whiteColor;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &--primary {
+        padding: 22px 32.5px;
+        line-height: 133%;
+        color: $whiteColor;
+        background-color: $primary;
+    }
+
+    &--outline {
+        padding: 22.5px 51px;
+        color: $secondary;
+        border: 1px solid currentColor;
+        background-color: transparent;
+    }
+
+    &--rounded {
+        border-radius: 8px;
+    }
+
+    &--buyNow {
+        padding: 14.5px 74px;
+    }
+
+    &--learnMore {
+        padding: 15.5px 36.5px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: transparent;
+    }
+
+    &--allLocations {
+        color: $secondary;
+        padding: 15.5px 36.5px;
+        border: 1px solid currentColor;
+        background-color: transparent;
+    }
+
+    &--time {
+        max-width: 120px;
+        max-height: 32px;
+        border-radius: 25px;
+        padding: 6.5px 30px;
+        background-color: #e6ecf4;
+        color: $secondary2;
+        line-height: 19px;
+    }
+
+    &--downloadApp {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        background-color: $whiteColor;
+        padding: 15px 30px;
+        line-height: 20px !important;
+    }
+
+    &--readMore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 180px;
+        height: 54px;
+        background: $primary3;
+        border-radius: 8px;
+    }
+
+
+}
