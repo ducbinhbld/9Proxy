@@ -1,3 +1,6 @@
+
+
+
 .header {
     background: linear-gradient(
         180deg,
@@ -8,13 +11,14 @@
 
 
 
-    &__wrapper {
+    &__fixed {
         width: 100%;
         max-width: 2560px;
         position: fixed;
         top: 0;
-        // background-color: #fff;
+        background-color: #fff;
         z-index: 9999;
+
 
     }
 
