@@ -131,11 +131,12 @@ body {
 .header {
   background: linear-gradient(180deg, rgba(219, 228, 254, 0.35) 0%, rgba(219, 228, 254, 0) 73.44%, rgba(255, 255, 255, 0) 100%);
 }
-.header__wrapper {
+.header__fixed {
   width: 100%;
   max-width: 2560px;
   position: fixed;
   top: 0;
+  background-color: #fff;
   z-index: 9999;
 }
 .header__top {
@@ -206,6 +207,9 @@ body {
   color: #112446;
 }
 
+.banner {
+  padding-top: 76px;
+}
 .banner__top {
   display: flex;
   justify-content: flex-start;
@@ -245,7 +249,6 @@ body {
   line-height: 133%;
 }
 .banner__image {
-  margin-top: 76px;
   margin-bottom: 100px;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -441,7 +444,7 @@ body {
 .map__block {
   width: 100%;
   padding: 0 90px;
-  background-image: url("/assets/images/map-frame.png");
+  background-image: url("../assets/images/map-frame.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -526,7 +529,7 @@ body {
   padding: 30px 30px 45px 30px;
   position: relative;
 }
-.price__item::after {
+.price__item:nth-child(1)::after, .price__item:nth-child(2)::after, .price__item:nth-child(4)::after, .price__item:nth-child(5)::after {
   content: "";
   display: block;
   position: absolute;
@@ -705,7 +708,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   z-index: 999;
 }
 .customer__feel-info {
@@ -727,27 +729,6 @@ body {
 .customer__feel-name {
   line-height: 160%;
 }
-.customer__shadow1 {
-  height: 250px;
-  width: 1070px;
-  box-shadow: 0px 0px 35px rgba(6, 65, 90, 0.1);
-  border-radius: 25px;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 1;
-  top: 15%;
-}
-.customer__shadow2 {
-  height: 250px;
-  width: 970px;
-  box-shadow: 0px 0px 35px rgba(6, 65, 90, 0.1);
-  border-radius: 25px;
-  margin: 0 auto;
-  position: absolute;
-  top: 28%;
-  z-index: 10;
-}
-
 .faq {
   margin-top: 165px;
   margin-bottom: 106px;
@@ -842,6 +823,12 @@ body {
   font-size: 14px;
   line-height: 40px;
   color: #ffffff;
+}
+.footer__copyright div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

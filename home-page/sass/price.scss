@@ -51,7 +51,11 @@
 
     }
 
-    &__item::after {
+
+    &__item:nth-child(1)::after,
+    &__item:nth-child(2)::after,
+    &__item:nth-child(4)::after,
+    &__item:nth-child(5)::after {
         content: "";
         display: block;
         position: absolute;

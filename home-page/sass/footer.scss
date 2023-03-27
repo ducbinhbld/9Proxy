@@ -86,6 +86,13 @@
             line-height: 40px;
             color: $whiteColor;
         }
+
+        div {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 5px;
+        }
     }
 
 
