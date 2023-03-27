@@ -103,14 +103,15 @@
         margin-top: 40px;
         a {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            gap: 12px;
             padding: 17px 34px;
-            gap: 10px;
-            width: 232px;
-
-            span {
-                line-height: 19px;
-            }
+            width: 240px;
+            line-height: 19px;
+            font-size: 15px;
+            font-weight: 500;
+            color: $secondary;
         }
     }
 

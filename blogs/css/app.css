@@ -494,13 +494,15 @@ body {
 }
 .blogs-tab-news__load-more a {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 12px;
   padding: 17px 34px;
-  gap: 10px;
-  width: 232px;
-}
-.blogs-tab-news__load-more a span {
+  width: 240px;
   line-height: 19px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #112446;
 }
 .blogs-tab-news__right {
   display: flex;
