@@ -61,8 +61,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
-  padding: 0 15px;
+  max-width: 1470px;
+  padding: 0 30px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -344,9 +344,15 @@ body {
   overflow: hidden;
 }
 
+.blogs-featured > .container {
+  overflow: visible;
+}
+
 .blogs-featured {
   background-color: #0a1527;
   padding: 100px 0;
+}
+.blogs-featured__container {
   position: relative;
 }
 .blogs-featured__title {
@@ -400,13 +406,13 @@ body {
 }
 .blogs-featured__back {
   position: absolute;
-  top: 45%;
-  left: -20%;
+  top: 50%;
+  left: -10%;
 }
 .blogs-featured__next {
   position: absolute;
-  top: 45%;
-  right: -20%;
+  top: 50%;
+  right: -10%;
 }
 
 .blogs-tab-news {
