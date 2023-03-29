@@ -1,10 +1,13 @@
+.blogs-featured > .container {
+    overflow: visible;
+}
+
 .blogs-featured {
     background-color: #0a1527;
     padding: 100px 0;
-    position: relative;
 
     &__container {
-      
+        position: relative;
     }
 
     &__title {
@@ -29,7 +32,7 @@
         height: 450px;
         border-radius: 8px;
         background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-        background-position: top center; 
+        background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -64,16 +67,14 @@
     }
 
     &__back {
-
         position: absolute;
-        top: 45%;
-        left: -20%;
-        // background-color: red;
+        top: 50%;
+        left: -10%;
     }
 
     &__next {
         position: absolute;
-        top: 45%;
-        right: -20%;
+        top: 50%;
+        right: -10%;
     }
 }
