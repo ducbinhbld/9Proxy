@@ -1,0 +1,81 @@
+.faq-top {
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+    &__container {
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 48px;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $grayColor;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    &__search {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 29px;
+        border: 1px solid #ececee;
+        border-radius: 8px;
+        box-shadow: 0px 0px 35px rgba(65, 124, 177, 0.1);
+
+        input {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 19px;
+            color: $secondary;
+            width: 100%;
+            max-width: 500px;
+            border: none;
+        }
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px 10px 10px;
+        gap: 34px;
+        margin: 0 auto;
+        width: 820px;
+        background: $whiteColor;
+        border-radius: 8px;
+        box-shadow: 0px 0px 35px rgba(65, 124, 177, 0.1);
+        margin-top: 80px;
+    }
+
+    &__tab-item {
+        span {
+            line-height: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $secondary;
+        }
+    }
+
+    &__tab-item &__tab-item--active {
+        display: block;
+        background: $primary;
+        color: $whiteColor;
+        padding: 10.5px 22.5px;
+        border-radius: 8px;
+    }
+}
