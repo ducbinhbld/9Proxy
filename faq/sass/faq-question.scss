@@ -1,0 +1,46 @@
+.faq-question {
+
+    margin-bottom: 100px;
+
+    &__container {
+    }
+
+    &__group + &__group {
+        margin-top: 60px;
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 50px;
+    }
+
+
+    &__list + &__list {
+        margin-top: 20px;
+    }
+
+    &__item {
+        padding: 24px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f7f7f8;
+        border-radius: 8px;
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}
