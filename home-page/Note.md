@@ -11,6 +11,8 @@ sass ./sass/app.scss ./css/app.css --watch
 
 2. Reponsive
 
+- https://bizfly.vn/techblog/responsive-la-gi-cach-ung-dung-responsive-len-website.html
+
 
 a. PC
 

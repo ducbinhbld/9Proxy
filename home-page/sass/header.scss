@@ -1,15 +1,5 @@
-
-
-
 .header {
-    background: linear-gradient(
-        180deg,
-        rgba(219, 228, 254, 0.35) 0%,
-        rgba(219, 228, 254, 0) 73.44%,
-        rgba(255, 255, 255, 0) 100%
-    );
-
-
+    background: linear-gradient(180deg, rgba(219, 228, 254, 0.35) 0%, rgba(219, 228, 254, 0) 73.44%, rgba(255, 255, 255, 0) 100%);
 
     &__fixed {
         width: 100%;
@@ -18,8 +8,6 @@
         top: 0;
         background-color: #fff;
         z-index: 9999;
-
-
     }
 
     &__top {
@@ -97,5 +85,103 @@
         font-weight: 600;
         line-height: calc(19 / 15);
         color: $secondary;
+    }
+
+    &__reponsive {
+        display: none;
+    }
+
+    &__menu-reponsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        .container {
+            padding: 0;
+        }
+
+        &__top {
+            display: none;
+        }
+
+        &__menu,
+        &__auth {
+            display: none;
+        }
+
+        &__menu-reponsive {
+            display: block;
+        }
+
+        &__reponsive {
+            display: block;
+            padding: 0 20px 20px 20px;
+            background-color: #fff;
+            div,
+            nav {
+                display: block;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                padding-top: 15px;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+              
+
+                li + li {
+                    margin-top: 30px;
+                }
+
+                li a {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                }
+            }
+            &-menu-link {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 19px;
+                text-transform: capitalize;
+                color: $secondary;
+            }
+
+            &-language {
+                margin-top: 35px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            &-auth {
+                margin-top: 92px;
+
+                a {
+                    display: block;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 19px;
+                    text-transform: capitalize;
+                    padding: 14.5px 0px;
+                    text-align: center;
+                    border: 1px solid $secondary;
+                    border-radius: 8px;
+                }
+            }
+
+            &-login {
+                color: $secondary;
+                background-color: $whiteColor;
+                margin-bottom: 20px;
+            }
+
+            &-sign-up {
+                color: $whiteColor;
+                background-color: $secondary;
+
+            }
+        }
     }
 }
