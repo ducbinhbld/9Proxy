@@ -554,6 +554,9 @@ body {
 .block-proxy__item + .block-proxy__item {
   margin-top: 100px;
 }
+.block-proxy__image--second img:last-child {
+  display: none;
+}
 .block-proxy__content a {
   margin-top: 40px;
 }
@@ -617,6 +620,73 @@ body {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1023px) {
+  .block-proxy__item {
+    padding: 0 20px;
+    column-gap: 40px;
+  }
+  .block-proxy__image {
+    width: 350px;
+    height: 296px;
+  }
+  .block-proxy__heading {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #ffffff;
+    margin-bottom: 37px;
+    text-transform: capitalize;
+  }
+  .block-proxy__desc {
+    line-height: 147%;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 70%;
+    font-weight: 400;
+  }
+  .block-proxy__item:first-child p + p {
+    display: none;
+  }
+  .block-proxy__image--second img:first-child {
+    display: none;
+  }
+  .block-proxy__image--second img:last-child {
+    display: block;
+  }
+  .block-proxy__desc--safe div {
+    width: 325px;
+  }
+  .block-proxy__desc--safe img {
+    width: 3px;
+    height: 190px;
+  }
+  .block-proxy__desc--safe h3 {
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+  .block-proxy__benefit-item {
+    margin-top: 25px;
+  }
+  .block-proxy__benefit-item img {
+    width: 3px;
+  }
+  .block-proxy__benefit-item:nth-child(2) img {
+    height: 50px;
+  }
+  .block-proxy__benefit-item:nth-child(2) span {
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .block-proxy__item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .block-proxy__item:last-child {
+    flex-direction: column-reverse;
+  }
+}
 .proxy {
   background: linear-gradient(180deg, rgba(219, 228, 254, 0.35) 0%, rgba(219, 228, 254, 0) 73.44%, rgba(255, 255, 255, 0) 100%);
   padding-top: 100px;
@@ -632,11 +702,8 @@ body {
 .proxy__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px;
-}
-.proxy__list + .proxy__list {
-  margin-top: 30px;
-  padding-bottom: 100px;
+  gap: 30px;
+  margin-bottom: 100px;
 }
 .proxy__item {
   padding: 30px 20px 36px 30px;
@@ -650,7 +717,8 @@ body {
   margin-bottom: 30px;
 }
 .proxy__content {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
 }
 .proxy__title {
   font-size: 18px;
@@ -663,6 +731,50 @@ body {
   line-height: 22px;
 }
 
+@media screen and (max-width: 1023px) {
+  .proxy__heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .proxy__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 20px;
+  }
+  .proxy__item {
+    width: 100%;
+    max-width: 247px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .proxy__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .proxy__item {
+    padding: 20px;
+    max-width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proxy__image {
+    margin-bottom: 20px;
+  }
+  .proxy__content p {
+    display: none;
+  }
+  .proxy__title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
 .map__container {
   display: flex;
   flex-direction: column;
@@ -704,7 +816,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 150px;
+  gap: 40px 150px;
+  flex-wrap: wrap;
 }
 .map__list:first-child {
   margin-bottom: 40px;
@@ -740,6 +853,42 @@ body {
   color: #121F3E;
 }
 
+@media screen and (max-width: 1023px) {
+  .map__heading {
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+  }
+  .map__desc {
+    line-height: 22px;
+    color: #7D7E83;
+    text-align: center;
+  }
+  .map__block {
+    background-image: none;
+    padding: 0 30px;
+  }
+  .map__list {
+    gap: 70px 50px;
+  }
+  .map__item {
+    flex: 1 0 18%;
+  }
+  .map__item:nth-last-child(-n+2) {
+    flex: 0.21;
+  }
+  .map__item:last-child {
+    margin-left: -53%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .map__item:nth-last-child(-n+2) {
+    flex: 1;
+  }
+  .map__item:last-child {
+    margin-left: 0;
+  }
+}
 .price {
   background-color: #123B6E;
 }
