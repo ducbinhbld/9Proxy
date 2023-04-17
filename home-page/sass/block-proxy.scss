@@ -16,7 +16,10 @@
         margin-top: 100px;
     }
 
-    &__image {
+    &__image--second {
+        img:last-child {
+            display: none;
+        }
     }
 
     &__content {
@@ -60,8 +63,6 @@
         margin-top: 15px;
     }
 
-
-
     &__desc--safe {
         display: flex;
         align-items: center;
@@ -75,7 +76,6 @@
         }
 
         p {
-
             font-weight: 400;
             color: $whiteColor;
             opacity: 70%;
@@ -98,7 +98,95 @@
             font-size: 18px;
             line-height: 200%;
             text-transform: capitalize;
+        }
+    }
+}
 
+@media screen and (max-width: 1023px) {
+    .block-proxy {
+        &__item {
+            padding: 0 20px;
+            column-gap: 40px;
+        }
+        &__image {
+            width: 350px;
+            height: 296px;
+        }
+
+        &__heading {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 40px;
+            color: $whiteColor;
+            margin-bottom: 37px;
+            text-transform: capitalize;
+        }
+
+        &__desc {
+            line-height: 147%;
+            letter-spacing: 0.02em;
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 70%;
+            font-weight: 400;
+        }
+
+        &__item:first-child {
+            p + p {
+                display: none;
+            }
+        }
+
+        &__image--second {
+            img:first-child {
+                display: none;
+            }
+            img:last-child {
+                display: block;
+            }
+        }
+
+        &__desc--safe {
+            div {
+                width: 325px;
+            }
+            img {
+                width: 3px;
+                height: 190px;
+            }
+            h3 {
+                line-height: 36px;
+                letter-spacing: 0.02em;
+            }
+        }
+
+        &__benefit-item {
+            margin-top: 25px;
+            img {
+                width: 3px;
+            }
+        }
+
+        &__benefit-item:nth-child(2) {
+            img {
+                height: 50px;
+            }
+            span {
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .block-proxy {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__item:last-child {
+            flex-direction:column-reverse;
         }
     }
 }
